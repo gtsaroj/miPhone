@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Send } from "lucide-react";
 import MovingComponent from "react-moving-text";
 
 const Data = () => {
@@ -10,7 +9,7 @@ const Data = () => {
 
   return (
     <div
-      className="home__data"
+      className="w-full flex flex-col items-start justify-center pl-0"
       style={{
         color: "var(--body_color)",
       }}
@@ -24,7 +23,7 @@ const Data = () => {
           timing="ease"
           iteration="1"
           fillMode="none"
-          className="home__title"
+          className="home__title "
         >
           SAROJ GT
         </MovingComponent>
@@ -39,25 +38,17 @@ const Data = () => {
           <span> {setChange}</span>
         </MovingComponent>
 
-        <p className="home__description">
+        <p className="sm:text-sm text-xs tracking-wide py-1.5 text-[var(--secondary-text)]   ">
           Hi there! I'm an enthusiastic fresher full stack developer with
           passion for creating modern web application
         </p>
       </div>
 
-      <button
-        style={{
-          padding: "5px 10px",
-          borderRadius: "3px",
-          backgroundColor: "var(--line)",
-        }}
-      >
+      <button className="rounded-md hover:bg-blue-600 duration-150 bg-[var(--primary-color)] text-white text-xs mt-4 border-[1px] border-gray-600 py-2 px-4 ">
         <a
-          style={{
-            textDecoration: "none",
-            color: "var(--body_background)",
-          }}
-          href="https://res.cloudinary.com/dhnvpzxt6/image/upload/v1715179024/Cv_shzgvd.pdf"
+          href="https://res.cloudinary.com/dhnvpzxt6/image/upload/v1732780725/Cv_nmnfbc.pdf"
+          rel="noreferrer"
+          target="_blank"
         >
           {" "}
           Download CV{" "}

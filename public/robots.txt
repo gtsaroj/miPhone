@@ -1,3 +1,15 @@
-# https://www.robotstxt.org/robotstxt.html
+# Allow all search engines to index the entire site
 User-agent: *
-Disallow:
+Allow: /
+
+# Disallow crawling of certain files or directories (optional)
+Disallow: /private/
+Disallow: /admin/
+Disallow: /hidden/
+
+# Disallow access to certain file types (optional)
+Disallow: /*.json$
+Disallow: /*.md$
+
+# Specify the location of the sitemap (if you have one)
+Sitemap: https://saroj-gt.web.app/sitemap.xml

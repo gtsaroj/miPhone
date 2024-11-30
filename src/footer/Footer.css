@@ -1,12 +1,14 @@
 .footer {
+    padding: 0  8px;
+    padding-bottom: 20px;
     background-color: var(--body_background);
     border-top: 1px rgba(0, 0, 0, 0.158);
-    box-shadow: 5px -2px 4px black;
+    box-shadow: -4px -3px 4px -3px #a5a5a5;
 
 }
 
 .footer__container {
-    padding: -1rem 0 6rem;
+padding: 2px 0px;
 
 }
 

@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Poppins:wght@600&display=swap");
 
-* {
-  font-family: "Fanwood Text", serif;
-  font-family: "Poppins", sans-serif;
-}
+
 
 .contact__container {
   grid-template-columns: repeat(2, max-content);
@@ -115,8 +112,8 @@ justify-content: baseline;
     width: 100%;
     border-radius: 10px;
     outline: none;
-    text-align: center;
-    border: 2px solid rgba(0, 0, 0, 0.39);
+    text-align: start;
+    border: 2px solid var(--border);
     background-color: var(--body_background);
     font-size: 13px;
     padding: 1.5rem;
@@ -136,7 +133,7 @@ justify-content: baseline;
   border-radius: 5px;
   color: var(--body_background);
   font-weight: 600;
-  background-color: var(--body_color);
+  background-color: var(--line) ;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -159,7 +156,7 @@ justify-content: baseline;
   font-size: 13px;
   top: 0;
   left: 0;
-  border: 2px solid rgba(0, 0, 0, 0.39);
+  border: 2px solid var(--border);
   width: 100%;
   height: 100%;
   background: none;

@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { ProjectData, projectNav } from "./Data";
 import "./Works.css";
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import { Link } from "react-router-dom";
-// import { useNavigate } from "react-router-dom";
 
 const Works = () => {
   const [projects, setProjects] = useState([]);

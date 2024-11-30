@@ -1,98 +1,16 @@
 /* Googel fonts */
-@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fanwood+Text&display=swap");
 
-
-/* ======VARIABLES CSS=========== */
-:root {
-  --body_background: white;
-  --body_color: black;
-  --link_color:  navy;
-  --header-height: 3rem;
-  --box_shadow: 5px 4px 0px #71636375;
-  --line: black;
-  --word_shadow: drop-shadow(4px 1px 1px rgb(65, 65, 65));
-  /* =============Colors============ */
-  --hue: 0;
-  --sat: 0%;
-  --title-color: hsl(var(var(--hue), var(var(--sat), 20%)));
-  --text-color: hsl(var(var(--hue), var(var(--sat), 0%)));
-  --body-color: hsl(var(var(--hue), var(var(--sat), 98%)));
-  --container-color: #fff;
-
-  /* =================FONT AND TYPOGRAPHY */
-  --body-font: "poppins", sans-serif;
-  --h1-font-size: 2.25rem;
-  --h2-font-size: 1.5rem;
-  --h3-font-size: 1.25rem;
-  --normal-font-size: 1rem;
-  --small-font-size: 0.875rem;
-  --tiny-font-size: 0.625rem;
-
-  /* font-weight */
-  --mb-0-25: 0.25rem;
-  --mb-0-5: 0.5rem;
-  --mb-0-75: 0.75rem;
-  --mb-1: 1rem;
-  --mb-1-5: 1.5rem;
-  --mb-2: 2rem;
-  --mb-2-5: 2.5rem;
-  --bm-3: 3rem;
-
-  /* z-index */
-  --z-tooltip: 10;
-  --z-fixed: 100;
-  --z-modal: 1000;
-}
 
 @media screen and (max-width: 992px) {
   :root {
     --big-font-size: 2.75rem;
     --h1-font-size: 1.5rem;
-    --h2-font-size: 1..25rem;
+    --h2-font-size: 1.25rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 0.831rem;
     --smaller-font-size: 0.75rem;
   }
-}
-
-
-
-/* base */
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-
-}
-
-body,
-button,
-input,
-textarea {
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-}
-
-
-
-h1,
-h2,
-h3 {
-  color: var(--title-color);
-  font-weight: var(--font-semi-bold);
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 button {
@@ -108,7 +26,6 @@ img {
 /* reusable css classes */
 .section {
   padding: 6rem 0 2rem;
-  ;
 }
 
 .section__title {
@@ -146,7 +63,6 @@ img {
 
 .button:hover {
   background-color: var(--title-color-dark);
-
 }
 
 .button__icon {
@@ -172,7 +88,6 @@ img {
   .button__icon {
     width: 22px;
     height: 22px;
-
   }
 }
 
@@ -191,8 +106,9 @@ img {
   }
 }
 
-@media screen and (max-width: 576px) {}
-  
+@media screen and (max-width: 576px) {
+}
+
 /* for small devices*/
 @media screen and (max-width: 350px) {
   :root {

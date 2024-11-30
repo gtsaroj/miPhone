@@ -10,12 +10,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const Contact = () => {
   const form = useRef();
 
-  const [isloading, setIsloading] = useState(true);
+  const [isloading, setIsloading] = useState(false);
 
   const handleSubmit = (e) => {
+    setIsloading(true);
     try {
       e.preventDefault();
-      setIsloading(true);
+      
       emailjs
         .sendForm(
           "service_gqdyvxm",
@@ -25,12 +26,13 @@ const Contact = () => {
         )
         .then((result) => {
           toast.success("Message was sent successfully!");
-          setIsloading(false);
+          
         });
     } catch (error) {
       console.log(error);
       toast.error("Please Check Your Internet!");
     }
+    setIsloading(false);
   };
 
   return (

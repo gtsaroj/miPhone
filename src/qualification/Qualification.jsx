@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Qualification.css";
 import { useState } from "react";
 
 const Qualification = () => {
-  const [toggleState, setToggleState] = useState(1);
+  const [toggleState, setToggleState] = useState();
 
   const toggleTab = (index) => {
     setToggleState(index);
   };
+
+  useEffect(() => {
+    setToggleState(1);
+  }, []);
+
   return (
     <section className="qualification__sections" id="profile">
       <h2 className="section__title">Qualification</h2>
@@ -58,7 +63,7 @@ const Qualification = () => {
                   2021 -2023
                 </div>
               </div>
-              <div>
+              <div className="line-1">
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
@@ -133,9 +138,7 @@ const Qualification = () => {
             }
           >
             <div className="qualification__data">
-              <div>
-            
-              </div>
+              <div></div>
               <div>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>

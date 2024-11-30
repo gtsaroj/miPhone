@@ -5,8 +5,8 @@
 }
 
 .skills__content {
-    background-color: #d4d8db36;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--body_background);
+    border: 1px solid var(--border);
     padding: 2rem 4rem;
     border-radius: 1.25rem;
     box-shadow: var(--box_shadow);

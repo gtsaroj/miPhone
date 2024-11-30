@@ -2,19 +2,30 @@ import React from "react";
 import "./home.css";
 import Social from "./Social";
 import Data from "./Data";
-import ScrollDown from "./ScrollDown";
+import Logo from "../assests/logo.png";
 
 const Home = () => {
   return (
-    <section className="home section" id="home">
-      <div className="home__container container grid">
-        <div className="home__content grid">
+    <section
+      className="lg:mt-20 mt-16 w-full flex lg:flex-row flex-col-reverse items-start lg:items-center justify-center "
+      id="home"
+    >
+      <div className="flex max-w-xl w-full items-center justify-start gap-x-10 ">
+        <div className="lg:flex hidden ">
           <Social />
-
-          <div className="home__img"></div>
-          <Data />
         </div>
-        <ScrollDown />
+        <Data />
+      </div>
+      <div className="flex">
+        <div className="flex lg:hidden ">
+          <Social />
+        </div>
+        <div
+          style={{
+            backgroundImage: `url(${Logo}) `,
+          }}
+          className="lg:bg-center bg-right bg-contain bg-no-repeat  w-[300px] sm:w-[400px] max-w-[500px] h-[300px]  "
+        ></div>
       </div>
     </section>
   );

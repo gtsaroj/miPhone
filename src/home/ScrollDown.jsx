@@ -1,5 +1,7 @@
 import React from 'react'
-import {ChevronsDown} from "lucide-react"
+import { ChevronsDown } from "lucide-react"
+import "./home.css";
+
 const ScrollDown = () => {
   return (
     <div className="home__scroll">

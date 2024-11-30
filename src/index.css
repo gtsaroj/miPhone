@@ -1,38 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ======VARIABLES CSS=========== */
+:root {
+  --body-background: #f7f8fc;
+  --body_color: rgb(3, 3, 5);
+  --link_color: navy;
+
+  /* main-color */
+  --primary-color: #0500a3;
+  --body-foreground: rgb(249, 249, 252);
+
+  /* Typography */
+  --primary-text: rgb(7, 9, 14);
+  --secondary-text: rgb(41, 42, 43);
+  --border-color: #dddddd;
+  --box_shadow: 5px 4px 0px #40454eaf;
+}
+
+.dark {
+  --body-background: #0c1016;
+  --body_color: white;
+
+  /* main-color */
+  --primary-color: #0500a3;
+
+  --body-foreground: rgb(8, 8, 8);
+
+  /* Typography */
+  --primary-text: rgb(236, 237, 240);
+  --secondary-text: rgb(121, 124, 126);
+  --border-color: #192030;
+
+  --link_color: cyan;
+  --active: #151f31af;
+  --box_shadow: 5px 4px 0px #080b11af;
+  --line: white;
+  --border: #0f121af8;
+  --word_shadow: drop-shadow(3px 3px 1px rgb(19, 21, 26));
+}
+
 body {
+  background-color: var(--body-background);
+  padding: 0%;
+  font-family: "Faculty Glyphic";
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* General styling for the scrollbar */
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-track {
-  width: 10px; /* Set the width of the scrollbar */
+  width: 7px; /* Set the width of the scrollbar */
+  cursor: pointer;
 }
 
 /* Track (the area the thumb moves along) */
 ::-webkit-scrollbar-track {
-  background-color: #929292; /* Set the color of the track */
+  background-color: #eeeaea; /* Set the color of the track */
 }
 
 /* Handle (the draggable part of the scrollbar) */
 ::-webkit-scrollbar-thumb {
-  background-color: #0a0909; /* Set the color of the thumb */
-  border-radius: 6px; /* Set the border-radius for rounded corners */
+  background-color: #16161636; /* Set the color of the thumb */
+  border-radius: 3px; /* Set the border-radius for rounded corners */
 }
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Set the color of the thumb on hover */
-  margin: 10px;
-}
-
